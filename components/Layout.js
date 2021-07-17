@@ -3,7 +3,7 @@ import NavBar from "./Nav";
 
 const Layout = ({
 	children,
-	title = "Insurerity Digital - Modern Insurance solutions for everyone",
+	title = "kangah.codes",
 	desc = `Insurerity Digital is a Software-as-a-service (SaaS) company that
       provides tailored solutions to brokers and insurers seeking to fully
       digitize their customer acquisition process.`,
@@ -33,7 +33,7 @@ const Layout = ({
 				<meta name="twitter:description" content={desc} />
 				<meta name="twitter:site" content="@propernounco" />
 				<meta name="twitter:creator" content="@propernounco" />
-				<link rel="icon" href="/images/logos/favicon.png" />
+				<link rel="icon" href="/favicon.ico" />
 				{/* <link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link
 					href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&display=swap"
@@ -48,7 +48,9 @@ const Layout = ({
 			</div> */}
 
 			<div className="flex-grow overflow-x-hidden">
-				<NavBar />
+				<div className="sticky top-0 z-50">
+					<NavBar />
+				</div>
 				{children}
 			</div>
 		</div>
