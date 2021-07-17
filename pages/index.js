@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Cards from "../components/Card";
 import Likes from "../components/Tech";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 export default function Home() {
 	return (
@@ -13,6 +14,7 @@ export default function Home() {
 			<Cards />
 			<Likes />
 			<Projects />
+			<Contact />
 		</Layout>
 	);
 }
