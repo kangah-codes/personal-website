@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 /* eslint-disable @next/next/no-img-element */
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -39,16 +40,24 @@ const NavBar = (props) => {
 							</a>
 						</Link>
 					</div>
-					<div className="flex items-center justify-end lg:flex-1 lg:w-0">
+					<div className="flex items-center justify-end lg:flex-1 lg:w- space-x-3 font-semibold">
 						<a
 							href="/Resume.pdf"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							<span className="text-white text-md font-medium">
-								Resume
+								resume
 							</span>
 						</a>
+						<Link href="/music">
+							<span
+								className="text-gradient animate-gradient-x bg-gradient-to-r from-baseColour
+					via-pink-600 to-baseColour text-md cursor-pointer"
+							>
+								music
+							</span>
+						</Link>
 					</div>
 				</div>
 			</div>
