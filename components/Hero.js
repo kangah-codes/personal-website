@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 const Hero = () => {
 	return (
-		<div className="m-auto max-w-7xl py-20 px-0 md:px-8 text-white">
+		<div className="m-auto max-w-7xl py-20 pt-20 md:pt-28 xl:pt-48 px-8 text-white">
 			<div className="grid grid-cols-1 lg:grid-cols-2 w-full">
 				<div className="md:text-5xl text-2xl">
 					<h1 className="tracking-tight font-bold text-white leading-tighter mb-4 leading-normal">
@@ -17,9 +17,16 @@ const Hero = () => {
 								Hey there!
 							</p>
 						</div>
-						<span className="text-gradient font-black bg-gradient-to-r from-white to-baseColour">
-							I&apos;m Joshua.
-						</span>
+						<div className="relative">
+							<span className="text-gradient font-black bg-gradient-to-r from-white to-baseColour relative">
+								I&apos;m Joshua.
+								<img
+									src="/underline.svg"
+									alt="underline"
+									className="w-60 -bottom-2 absolute"
+								/>
+							</span>
+						</div>
 					</h1>
 					<div className="text-xl mt-4">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -28,14 +35,12 @@ const Hero = () => {
 					</div>
 				</div>
 
-				<div className="w-full relative items-center justify-center">
+				<div className="w-full flex relative lg:items-center lg:justify-center mt-20">
 					<div className="absolute top-0 left-5 w-72 h-72 bg-purple-900 rounded-full filter blur-3xl animate-blob" />
 					<div className="absolute top-0 -right-4 w-72 h-72 bg-baseColour rounded-full filter blur-3xl animate-blob animation-delay-2000" />
 					<div className="absolute top-28 right-36 w-72 h-72 bg-orange-600 rounded-full filter blur-3xl animate-blob animation-delay-4000" />
 					<div className="space-y-4 absolute">
-						<div className="w-full border border-gray-50 rounded-2xl p-8 bg-black bg-opacity-60 filter backdrop-blur-lg flex">
-							<span className="mx-auto w-32 h-32 bg-baseColour rounded-full p-3" />
-						</div>
+						<img src="/my-photo.png" alt="me" className="mx-auto" />
 
 						{/* <div className="p-5 bg-white rounded-lg flex items-center justify-between space-x-8">
 							<div className="flex-1">
