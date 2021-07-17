@@ -1,34 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
-// import TouchCarousel from "react-touch-carousel";
-import dynamic from "next/dynamic";
-const TouchCarousel = dynamic(() => import("react-touch-carousel"), {
-	ssr: false,
-});
-const touchWithMouseHoc = dynamic(() => import("react-touch-carousel"));
-
 const data = [
 	{
-		title: "Frontend Development",
+		title: "Music",
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		icon: "/laptop.png",
+		icon: "/music.png",
 		blobColour: "bg-purple-400",
 	},
 	{
-		title: "Backend Development",
+		title: "Coding",
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 		icon: "/keyboard.png",
 		blobColour: "bg-baseColour",
 	},
 	{
-		title: "Devops",
+		title: "Gaming",
 		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		icon: "/settings.png",
+		icon: "/gaming.png",
 		blobColour: "bg-white",
 	},
 ];
 
-const renderCard = (index, modIndex, cursor) => {
-	const { title, text, icon, blobColour } = data[modIndex];
+const Card = ({ data }) => {
+	const { title, text, icon, blobColour } = data;
 	return (
 		<div className="relative">
 			<div
@@ -48,36 +41,19 @@ const renderCard = (index, modIndex, cursor) => {
 	);
 };
 
-const Tech = () => {
+const Likes = () => {
 	return (
-		<div className="my-0 lg:my-20 max-w-7xl flex flex-col px-8 mx-auto items-start">
-			{/* <p className="text-white md:text-5xl text-3xl font-semibold mb-4 cursive relative">
-				Things I do
-				<img
-					src="/underline.svg"
-					alt="underline"
-					className="w-60 -bottom-2 absolute transform -rotate-3 invert"
-				/>
+		<div className="my-20 max-w-7xl flex flex-col px-8 mx-auto items-start">
+			<p className="text-white md:text-5xl text-3xl font-semibold mb-4 cursive flex">
+				My interests
 			</p>
 			<div className="w-full grid grid-cols-1 lg:grid-cols-3  z-50 relative  gap-5 ">
 				{data.map((card, key) => (
 					<Card key={key} data={card} />
 				))}
-			</div> */}
+			</div>
 		</div>
 	);
 };
 
-const Carousel = () => {
-	return (
-		<TouchCarousel
-			component={Tech}
-			cardCount={data.length}
-			cardSize={375}
-			renderCard={renderCard}
-			loop
-		/>
-	);
-};
-
-export default Carousel;
+export default Likes;
