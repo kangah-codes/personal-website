@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.text-gradient {
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+	width: 20px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #d6dee1;
+	border-radius: 20px;
+	border: 6px solid transparent;
+	background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #a8bbbf;
+}
+
+@font-face {
+	font-family: "Gilroy Medium";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../public/Gilroy-Medium.ttf");
+}
+
+@font-face {
+	font-family: "Gilroy Heavy";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../public/Gilroy-Bold.ttf");
+}
+
+body {
+	font-family: "Gilroy Medium";
+}
+
+.font-heavy {
+	font-family: "Gilroy Heavy" !important;
+}
+
+.gradient {
+	width: 258px;
+	height: 292px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: blur(80px);
+}
+
+.gradient-1 {
+	width: 174px;
+	height: 174px;
+	background: #f6ec2c;
+	bottom: 0;
+	left: 0;
+}
+
+.gradient-2 {
+	width: 190px;
+	height: 190px;
+	background: #f45d2d;
+	top: 0;
+	right: 0;
+}
+
+.gradient-3 {
+	width: 156px;
+	height: 156px;
+	background: #9f02ff;
+	right: 0;
+	bottom: 0;
+}
+
+@layer utilities {
+	.animation-delay-2000 {
+		animation-delay: 2s;
+	}
+
+	.animation-delay-4000 {
+		animation-delay: 4s;
+	}
+}
