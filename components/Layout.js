@@ -48,7 +48,7 @@ const Layout = ({
 			</div> */}
 
 			<div className="flex-grow overflow-x-hidden">
-				<div className="sticky top-0 z-50">
+				<div className="fixed top-0 z-50 w-full">
 					<NavBar />
 				</div>
 				{children}
