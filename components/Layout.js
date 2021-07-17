@@ -43,11 +43,14 @@ const Layout = ({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet"/> */}
 			</Head>
 
-			<div className="sticky top-0 z-50">
+			{/* <div className="z-50">
 				<NavBar />
-			</div>
+			</div> */}
 
-			<div className="flex-grow">{children}</div>
+			<div className="flex-grow overflow-x-hidden">
+				<NavBar />
+				{children}
+			</div>
 		</div>
 	);
 };
