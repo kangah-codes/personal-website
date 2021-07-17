@@ -27,7 +27,10 @@ const NavBar = (props) => {
 			} transition duration-500`}
 			style={{ zIndex: 9999999999 }}
 		>
-			<div style={{ maxWidth: "100rem" }} className="mx-auto pr-4 py-3">
+			<div
+				style={{ maxWidth: "100rem" }}
+				className="mx-auto pr-4 py-0 md:py-3"
+			>
 				<div className="flex justify-between items-center py-4 lg:justify-start lg:space-x-10 max-w-7xl mx-auto">
 					<div className="flex">
 						<Link href="/">
