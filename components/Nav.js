@@ -17,7 +17,7 @@ const NavBar = (props) => {
 
 	return (
 		<div
-			className="backdrop-filter backdrop-blur-md bg-opacity-60"
+			className="backdrop-filter backdrop-blur-md bg-opacity-60 border-b border-borderColour"
 			style={{ zIndex: 9999999999 }}
 		>
 			<div style={{ maxWidth: "100rem" }} className="mx-auto pr-4 py-3">
