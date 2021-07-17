@@ -29,9 +29,8 @@ const Hero = () => {
 						</div>
 					</h1>
 					<div className="text-xl mt-4">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua.
+						I&apos;m a student, developer, gamer, and many other
+						things.
 					</div>
 				</div>
 
@@ -45,31 +44,6 @@ const Hero = () => {
 							alt="me"
 							className="relative w-96"
 						/>
-
-						{/* <div className="p-5 bg-white rounded-lg flex items-center justify-between space-x-8">
-							<div className="flex-1">
-								<div className="h-4 w-48 bg-gray-300"></div>
-							</div>
-							<div>
-								<div className="w-24 h-6 rounded-lg bg-purple-300"></div>
-							</div>
-						</div>
-						<div className="p-5 bg-white rounded-lg flex items-center justify-between space-x-8">
-							<div className="flex-1">
-								<div className="h-4 w-48 bg-gray-300"></div>
-							</div>
-							<div>
-								<div className="w-24 h-6 rounded-lg bg-purple-300"></div>
-							</div>
-						</div>
-						<div className="p-5 bg-white rounded-lg flex items-center justify-between space-x-8">
-							<div className="flex-1">
-								<div className="h-4 w-48 bg-gray-300"></div>
-							</div>
-							<div>
-								<div className="w-24 h-6 rounded-lg bg-purple-300"></div>
-							</div>
-						</div> */}
 					</div>
 				</div>
 			</div>
