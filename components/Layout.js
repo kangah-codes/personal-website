@@ -48,7 +48,10 @@ const Layout = ({
 			</div> */}
 
 			<div className="flex-grow overflow-x-hidden">
-				<div className="fixed top-0 z-50 w-full">
+				<div
+					className="fixed top-0 w-full"
+					style={{ zIndex: 99999999999 }}
+				>
 					<NavBar />
 				</div>
 				{children}
