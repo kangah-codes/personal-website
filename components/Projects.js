@@ -90,8 +90,13 @@ const Card = ({ data }) => {
 const Projects = () => {
 	return (
 		<div className="my-0 lg:my-20 max-w-7xl flex flex-col px-8 mx-auto items-start">
-			<p className="text-white md:text-5xl text-3xl font-semibold mb-4 cursive flex">
+			<p className="text-white md:text-5xl text-3xl font-semibold mb-4 cursive relative">
 				A few of my projects
+				<img
+					src="/underline.svg"
+					alt="underline"
+					className="w-60 -bottom-2 absolute transform -rotate-3 invert-2"
+				/>
 			</p>
 			<div className="w-full grid grid-cols-1 lg:grid-cols-3  z-50 relative  gap-5 ">
 				{data.map((card, key) => (
