@@ -21,6 +21,7 @@ const Contact = () => {
 						href="https://www.instagram.com/kanga.py/"
 						target="_blank"
 						rel="noopener noreferrer"
+						className="cursor-select"
 					>
 						<img src="/ig.svg" className="w-6 md:w-10 absolute" />
 					</a>
@@ -28,6 +29,7 @@ const Contact = () => {
 						href="https://www.linkedin.com/in/akangah89"
 						target="_blank"
 						rel="noopener noreferrer"
+						className="cursor-select"
 					>
 						<img
 							src="/linkedin.svg"
@@ -38,6 +40,7 @@ const Contact = () => {
 						href="https://www.facebook.com/joshua.akangah"
 						target="_blank"
 						rel="noopener noreferrer"
+						className="cursor-select"
 					>
 						<img src="/fb.svg" className="w-6 md:w-10 absolute" />
 					</a>
@@ -45,6 +48,7 @@ const Contact = () => {
 						href="https://github.com/kangah-codes"
 						target="_blank"
 						rel="noopener noreferrer"
+						className="cursor-select"
 					>
 						<img
 							src="/github.svg"
