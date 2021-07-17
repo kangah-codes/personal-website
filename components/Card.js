@@ -3,19 +3,19 @@
 const data = [
 	{
 		title: "Frontend Development",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: `I build attractive and responsive web apps (like the one you're viewing) using tools such as Reactjs, Nextjs, and good old-fashioned HTML/CSS.`,
 		icon: "/laptop.png",
 		blobColour: "bg-purple-400",
 	},
 	{
 		title: "Backend Development",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: `I have experience in building APIs and microservices using a wide array of frameworks like Express, Django, FastAPI, Flask, etc. to deliver blazing fast services.`,
 		icon: "/keyboard.png",
 		blobColour: "bg-baseColour",
 	},
 	{
 		title: "Devops",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: `Devops is just that part of being a programmer you can't live without. Github actions? Check. CI/CD? Check. End-to-end testing? Check. Docker? CHECK.`,
 		icon: "/settings.png",
 		blobColour: "bg-white",
 	},
