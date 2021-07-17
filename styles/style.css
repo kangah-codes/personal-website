@@ -15,7 +15,7 @@
 }
 
 ::-webkit-scrollbar-track {
-	background-color: transparent;
+	background-color: black;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -43,12 +43,23 @@
 	src: url("../public/Gilroy-Bold.ttf");
 }
 
+@font-face {
+	font-family: "Cursive";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../public/cursive.ttf");
+}
+
 body {
 	font-family: "Gilroy Medium";
 }
 
 .font-heavy {
 	font-family: "Gilroy Heavy" !important;
+}
+
+.cursive {
+	font-family: "Cursive" !important;
 }
 
 .gradient {
@@ -93,4 +104,9 @@ body {
 	.animation-delay-4000 {
 		animation-delay: 4s;
 	}
+}
+
+.invert {
+	filter: invert(100%);
+	-webkit-filter: invert(100%);
 }
