@@ -28,7 +28,10 @@ const Card = ({ data }) => {
 			<div
 				className={`absolute top-1/3 left-1/4 w-32 h-32 ${blobColour} rounded-full filter blur-3xl animate-widen`}
 			/>
-			<div className="bg-borderColour-light filter backdrop-blur-lg z-50 border border-borderColour rounded-lg space-y-5 p-8 relative flex flex-col">
+			<div
+				className="bg-borderColour-light filter backdrop-blur-lg z-50 border border-borderColour 
+                rounded-lg space-y-5 p-8 relative flex flex-col hover:border-baseColour transition duration-500"
+			>
 				<img src={icon} className="w-14" alt="Bulb" />
 				<p className="text-white md:text-3xl text-2xl font-semibold">
 					{title}
