@@ -17,10 +17,34 @@ const Contact = () => {
 				</a>
 
 				<div className="flex mt-20 space-x-4">
-					<img src="/ig.svg" className="w-6 md:w-10" />
-					<img src="/linkedin.svg" className="w-6 md:w-10" />
-					<img src="/fb.svg" className="w-6 md:w-10" />
-					<img src="/github.svg" className="w-6 md:w-10" />
+					<a
+						href="https://www.instagram.com/kanga.py/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img src="/ig.svg" className="w-6 md:w-10" />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/akangah89"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img src="/linkedin.svg" className="w-6 md:w-10" />
+					</a>
+					<a
+						href="https://www.facebook.com/joshua.akangah"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img src="/fb.svg" className="w-6 md:w-10" />
+					</a>
+					<a
+						href="https://github.com/kangah-codes"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img src="/github.svg" className="w-6 md:w-10" />
+					</a>
 				</div>
 			</div>
 		</div>
