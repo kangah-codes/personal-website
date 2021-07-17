@@ -2,7 +2,7 @@
 const data = [
 	{
 		title: "Indie Game",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: "This is a 2d platformer pixel art game I started building. Don't have a convincing story or name for it yet.",
 		blobColour: "bg-yellow-600",
 		icon: "/indie.gif",
 		alignInverse: true,
@@ -10,35 +10,35 @@ const data = [
 	},
 	{
 		title: "Campusride",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: "A cashless transaction system for boarding campus shuttle buses built for Universities.",
 		blobColour: "bg-red-700",
 		icon: "/campusride.png",
 		link: "https://campusridegh.herokuapp.com/",
 	},
 	{
 		title: "Brick Breaker",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: "An infinite level brick breaker game. If boredom won't kill you first a bug in the game definitely will.",
 		icon: "/brick-game.png",
 		blobColour: "bg-purple-700",
 		link: "https://github.com/kangah-codes/brick_breaker",
 	},
 	{
 		title: "Metas Strip",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: "Tired of Zuck stealing all your precious image metadata? Just wipe all the metadata from your image with this tool before uploading to social media.",
 		icon: "/metas.png",
 		blobColour: "bg-baseColour",
 		link: "https://github.com/kangah-codes/metas-strip",
 	},
 	{
 		title: "Flasker",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: "A simple command-line tool to help speed up the process of creating a usable directory structure and code templates for working with Flask projects.",
 		blobColour: "bg-pink-700",
 		link: "https://github.com/kangah-codes/flasker",
 	},
 
 	{
 		title: "Fingerprint attendance system",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: "A fingerprint attendance system my team and I built for our Embedded Systems project. A fun learning experience.",
 		blobColour: "bg-green-700",
 		link: "https://github.com/kangah-codes/fingerprint-attendance-system",
 	},
