@@ -9,8 +9,14 @@ const Contact = () => {
 				<p className="md:text-5xl text-2xl text-black font-semibold">
 					Reach out to me
 				</p>
+				<a
+					href="mailto:hello@akangah.tech"
+					className="absolute text-xl text-black font-semibold underline cursor-pointer"
+				>
+					hello@akangah.tech
+				</a>
 
-				<div className="flex mt-14 space-x-4">
+				<div className="flex mt-20 space-x-4">
 					<img src="/ig.svg" className="w-6 md:w-10" />
 					<img src="/linkedin.svg" className="w-6 md:w-10" />
 					<img src="/fb.svg" className="w-6 md:w-10" />
