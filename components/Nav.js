@@ -40,9 +40,15 @@ const NavBar = (props) => {
 						</Link>
 					</div>
 					<div className="flex items-center justify-end lg:flex-1 lg:w-0">
-						<span className="text-white text-md font-medium">
-							Contact
-						</span>
+						<a
+							href="/Resume.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<span className="text-white text-md font-medium">
+								Resume
+							</span>
+						</a>
 					</div>
 				</div>
 			</div>
