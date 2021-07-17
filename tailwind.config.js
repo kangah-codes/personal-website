@@ -11,6 +11,7 @@ module.exports = {
 				"gradient-y": "gradient-y 5s ease infinite",
 				"gradient-xy": "gradient-xy 5s ease infinite",
 				blob: "blob 7s linear infinite",
+				widen: "widen 7s linear infinite",
 			},
 			keyframes: {
 				"gradient-y": {
@@ -51,6 +52,14 @@ module.exports = {
 					"66%": { transform: "translate(-20px, 20px) scale(0.9)" },
 					"100%": { transform: "translate(0px, 0px) scale(1)" },
 				},
+				widen: {
+					"0%": {
+						transform: "scale(1)",
+					},
+					"33%": { transform: "scale(1.1)" },
+					"66%": { transform: "scale(0.9)" },
+					"100%": { transform: "scale(1)" },
+				},
 			},
 			colors: {
 				orange: {
@@ -69,6 +78,10 @@ module.exports = {
 				},
 				baseColour: {
 					DEFAULT: "#F6EC2C",
+				},
+				borderColour: {
+					DEFAULT: "#8989894d",
+					light: "#0c0c0cb8",
 				},
 			},
 		},
