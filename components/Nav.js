@@ -1,23 +1,30 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const NavBar = (props) => {
-	const [mobileMenuOn, setMobileMenu] = useState(false);
-	const [menu1, setMenu1] = useState(false);
-	const [menu2, setMenu2] = useState(false);
+	const [isTop, setIsTop] = useState(true);
 
-	const closeMenu1 = () => {
-		setMenu1(false);
-	};
+	useEffect(() => {
+		document.addEventListener("scroll", () => {
+			const top = window.scrollY < 100;
+			if (isTop !== top) {
+				setIsTop(top);
+			}
 
-	const closeMenu2 = () => {
-		setMenu2(false);
-	};
+			if (window.scrollY === 0) {
+				setIsTop(true);
+			}
+		});
+	}, []);
 
 	return (
 		<div
-			className="backdrop-filter backdrop-blur-md bg-opacity-60 border-b border-borderColour"
+			className={`${
+				!isTop
+					? "backdrop-filter backdrop-blur-md bg-opacity-60 border-b border-borderColour"
+					: ""
+			} transition duration-500`}
 			style={{ zIndex: 9999999999 }}
 		>
 			<div style={{ maxWidth: "100rem" }} className="mx-auto pr-4 py-3">
