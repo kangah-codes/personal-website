@@ -7,6 +7,7 @@ import Likes from "../components/Interest";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Deck from "../components/Swipe";
 
 export default function Home() {
 	return (
