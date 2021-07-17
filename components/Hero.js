@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 const Hero = () => {
 	return (
-		<div className="m-auto max-w-7xl py-20 pt-20 md:pt-28 xl:pt-48 px-8 text-white">
-			<div className="grid grid-cols-1 lg:grid-cols-2 w-full">
-				<div className="md:text-5xl text-2xl">
+		<div className="m-auto max-w-7xl py-20 pt-20 md:pt-28 xl:pt-20 px-8 text-white">
+			<div className="grid grid-cols-1 lg:grid-cols-2 w-full items-start">
+				<div className="md:text-5xl text-2xl my-auto">
 					<h1 className="tracking-tight font-bold text-white leading-tighter mb-4 leading-normal">
 						<div className="flex">
 							<div className="bg-baseColour p-3 rounded-full my-auto">
@@ -23,7 +23,7 @@ const Hero = () => {
 								<img
 									src="/underline.svg"
 									alt="underline"
-									className="w-60 -bottom-2 absolute"
+									className="w-60 -bottom-2 absolute transform -rotate-3"
 								/>
 							</span>
 						</div>
@@ -35,7 +35,7 @@ const Hero = () => {
 					</div>
 				</div>
 
-				<div className="w-full flex relative lg:items-center lg:justify-center mt-20">
+				<div className="w-full flex relative lg:items-center lg:justify-center mt-20 h-96">
 					<div className="absolute top-0 left-5 w-72 h-72 bg-purple-900 rounded-full filter blur-3xl animate-blob" />
 					<div className="absolute top-0 -right-4 w-72 h-72 bg-baseColour rounded-full filter blur-3xl animate-blob animation-delay-2000" />
 					<div className="absolute top-28 right-36 w-72 h-72 bg-orange-600 rounded-full filter blur-3xl animate-blob animation-delay-4000" />
