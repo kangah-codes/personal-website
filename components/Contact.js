@@ -16,7 +16,7 @@ const Contact = () => {
 					hello@akangah.tech
 				</a>
 
-				<div className="flex mt-20 space-x-8 md:space-x-14">
+				<div className="flex mt-20 mb-8 md:mb-4 lg:mb-0 space-x-8 md:space-x-14">
 					<a
 						href="https://www.instagram.com/kanga.py/"
 						target="_blank"
