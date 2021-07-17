@@ -2,19 +2,23 @@
 const data = [
 	{
 		title: "Music",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: `
+			I love listening to music. I love Michael Jackson 👑, The Beatles, Queen, Led Zeppelin, Lynyrd Skynyrd, and many many more artists.
+		`,
 		icon: "/music.png",
 		blobColour: "bg-purple-400",
 	},
 	{
 		title: "Coding",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: `
+			I love programming. Programming has taught me how to approach problems and solve them in many ways. It's the perfect mental exercise for me.
+		`,
 		icon: "/keyboard.png",
 		blobColour: "bg-baseColour",
 	},
 	{
 		title: "Gaming",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		text: `When I'm not making games, I'm playing them. I regularly play games like Red Dead Redemption 2, GTA V, FIFA 19, Minecraft and Mortal Kombat.`,
 		icon: "/gaming.png",
 		blobColour: "bg-white",
 	},
@@ -52,7 +56,7 @@ const Likes = () => {
 					className="w-60 -bottom-2 absolute transform -rotate-3 invert-1"
 				/>
 			</p>
-			<div className="w-full grid grid-cols-1 lg:grid-cols-3  z-50 relative  gap-5 ">
+			<div className="w-full grid grid-cols-1 lg:grid-cols-3 z-50 relative gap-5 ">
 				{data.map((card, key) => (
 					<Card key={key} data={card} />
 				))}
