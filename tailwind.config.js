@@ -6,6 +6,22 @@ module.exports = {
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {
+			height: {
+				100: "30rem",
+				105: "35rem",
+				110: "40rem",
+				115: "45rem",
+				120: "50rem",
+				125: "55rem",
+				130: "60rem",
+				135: "65rem",
+				140: "70rem",
+				145: "75rem",
+				150: "80rem",
+				155: "85rem",
+				160: "90rem",
+				165: "95rem",
+			},
 			animation: {
 				"gradient-x": "gradient-x 5s ease infinite",
 				"gradient-y": "gradient-y 5s ease infinite",
