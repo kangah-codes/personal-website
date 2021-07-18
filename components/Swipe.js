@@ -109,7 +109,7 @@ function Deck() {
 				{...bind(i)}
 				style={{
 					transform: interpolate([rot, scale], trans),
-					backgroundImage: `url(/albums/${cards[i]})`,
+					backgroundImage: `url(https://storage.googleapis.com/kangah-album-covers/${cards[i]})`,
 				}}
 			/>
 		</animated.div>
