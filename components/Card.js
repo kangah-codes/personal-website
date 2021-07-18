@@ -1,26 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 
-const data = [
-	{
-		title: "Frontend Development",
-		text: `I build attractive and responsive web apps (like the one you're viewing) using tools such as Reactjs, Nextjs, and good old-fashioned HTML/CSS.`,
-		icon: "/laptop.png",
-		blobColour: "bg-purple-400",
-	},
-	{
-		title: "Backend Development",
-		text: `I have experience in building APIs and microservices using a wide array of frameworks like Express, Django, FastAPI, Flask, etc. to deliver blazing fast services.`,
-		icon: "/keyboard.png",
-		blobColour: "bg-baseColour",
-	},
-	{
-		title: "Devops",
-		text: `Devops is just that part of being a programmer you can't live without. Github actions? Check. CI/CD? Check. End-to-end testing? Check. Docker? CHECK.`,
-		icon: "/settings.png",
-		blobColour: "bg-white",
-	},
-];
-
 const Card = ({ data }) => {
 	const { title, text, icon, blobColour } = data;
 	return (
@@ -42,11 +21,11 @@ const Card = ({ data }) => {
 	);
 };
 
-const Cards = () => {
+const Cards = ({ title, data }) => {
 	return (
 		<div className="my-0 lg:my-20 max-w-7xl flex flex-col px-8 mx-auto items-start">
 			<p className="text-white md:text-5xl text-3xl font-semibold mb-4 cursive relative">
-				Things I do
+				{title}
 				<img
 					src="/underline.svg"
 					alt="underline"
