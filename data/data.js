@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const thingsIdo = [
 	{
 		title: "Frontend Development",
@@ -43,3 +45,119 @@ export const myInterests = [
 		blobColour: "bg-white",
 	},
 ];
+
+const unfinished_projects = {
+	space_ace: {
+		type: "FOLDER",
+		children: null,
+	},
+	weather_app: {
+		type: "FOLDER",
+		children: null,
+	},
+	youtube_dl: {
+		type: "FOLDER",
+		children: null,
+	},
+	pysplash: {
+		type: "FOLDER",
+		children: null,
+	},
+	flash: {
+		type: "FOLDER",
+		children: null,
+	},
+	visort: {
+		type: "FOLDER",
+		children: null,
+	},
+};
+
+export const Languages = () => (
+	<div>
+		<p>Languages I work with</p>
+
+		<div className="flex space-x-2">
+			<div>
+				<Image src="/python.png" alt="python" width={40} height={40} />
+			</div>
+			<div>
+				{" "}
+				<Image src="/typescript.png" alt="ts" width={40} height={40} />
+			</div>
+			<div>
+				<Image src="/javascript.svg" alt="js" width={40} height={40} />
+			</div>
+		</div>
+	</div>
+);
+
+const tech = [
+	"flask.png",
+	"django.png",
+	"express.png",
+	"docker.png",
+	"parse.png",
+	"bootstrap.png",
+	"gcloud.ico",
+	"mongo.ico",
+	"next.png",
+	"postman.png",
+	"react.png",
+	"ant.png",
+	"atom.png",
+	"vscode.png",
+	"arduino.png",
+];
+
+export const Technologies = () => (
+	<div>
+		<p>Technologies I work with</p>
+
+		<div className="flex space-x-2">
+			{tech.map((item, key) => (
+				<div key={key}>
+					<Image
+						src={`/tech/${item}`}
+						alt={item}
+						width={40}
+						height={40}
+						className="round"
+					/>
+				</div>
+			))}
+			<style jsx global>{`
+				.round {
+					border-radius: 4px;
+				}
+			`}</style>
+		</div>
+	</div>
+);
+
+export const exampleFileSystem = {
+	languages: {
+		type: "FOLDER",
+		children: {
+			languages: {
+				type: "FILE",
+				content: <Languages />,
+				extension: "txt",
+			},
+		},
+	},
+	technologies: {
+		type: "FOLDER",
+		children: {
+			technologies: {
+				type: "FILE",
+				content: <Technologies />,
+				extension: "txt",
+			},
+		},
+	},
+	unfinished_projects: {
+		type: "FOLDER",
+		children: { ...unfinished_projects },
+	},
+};
