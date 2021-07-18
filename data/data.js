@@ -80,14 +80,29 @@ export const Languages = () => (
 
 		<div className="flex space-x-2">
 			<div>
-				<Image src="/python.png" alt="python" width={40} height={40} />
+				<Image
+					src="/tech/python.png"
+					alt="python"
+					width={40}
+					height={40}
+				/>
 			</div>
 			<div>
 				{" "}
-				<Image src="/typescript.png" alt="ts" width={40} height={40} />
+				<Image
+					src="/tech/typescript.png"
+					alt="ts"
+					width={40}
+					height={40}
+				/>
 			</div>
 			<div>
-				<Image src="/javascript.svg" alt="js" width={40} height={40} />
+				<Image
+					src="/tech/javascript.svg"
+					alt="js"
+					width={40}
+					height={40}
+				/>
 			</div>
 		</div>
 	</div>
