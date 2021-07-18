@@ -26,7 +26,7 @@ export default function Home() {
 					like in this pile. Swipe through to have a look!
 				</div>
 			</div>
-			<div className="swipe_div h-115 overflow-x-hidden z-50">
+			<div className="swipe_div h-115 overflow-x-hidden z-50 flex items-center justify-center">
 				<Deck />
 			</div>
 		</Layout>
