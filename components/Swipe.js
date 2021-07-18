@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSprings, animated, to as interpolate } from "react-spring";
 import { useDrag } from "react-use-gesture";
+import Image from "next/image";
 
 const cards = [
 	"a-night-at-the-opera.jpg",
@@ -42,6 +43,11 @@ const cards = [
 	"toto-iv.jpg",
 	"van-halen.jpg",
 ];
+
+const prefix =
+	process.env.NODE_ENV !== "development"
+		? "/albums"
+		: "https://storage.googleapis.com/kangah-album-covers";
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i) => ({
@@ -109,9 +115,23 @@ function Deck() {
 				{...bind(i)}
 				style={{
 					transform: interpolate([rot, scale], trans),
-					backgroundImage: `url(https://storage.googleapis.com/kangah-album-covers/${cards[i]})`,
+					// backgroundImage: `url(https://storage.googleapis.com/kangah-album-covers/${cards[i]})`,
 				}}
-			/>
+			>
+				<Image
+					src={`${prefix}/${cards[i]}`}
+					width={500}
+					height={500}
+					style={{ borderRadius: "5px" }}
+					alt={cards[i]}
+					className="album-cover"
+				/>
+				<style jsx global>{`
+					.album-cover {
+						border-radius: 10px;
+					}
+				`}</style>
+			</animated.div>
 		</animated.div>
 	));
 }
