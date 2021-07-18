@@ -58,6 +58,14 @@ const NavBar = (props) => {
 								music
 							</span>
 						</Link>
+						<Link href="/skills">
+							<span
+								className="text-gradient animate-gradient-x bg-gradient-to-r from-baseColour
+					via-green-600 to-baseColour text-md cursor-pointer"
+							>
+								skills
+							</span>
+						</Link>
 					</div>
 				</div>
 			</div>
