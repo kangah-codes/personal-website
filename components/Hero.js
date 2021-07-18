@@ -3,7 +3,7 @@ const Hero = () => {
 	return (
 		<div className="m-auto max-w-7xl py-20 pt-48 xl:pt-36 px-8 text-white">
 			<div className="grid grid-cols-1 lg:grid-cols-2 w-full items-start">
-				<div className="md:text-5xl text-2xl my-auto">
+				<div className="text-5xl my-auto">
 					<h1 className="tracking-tight font-bold text-white leading-tighter mb-4 leading-normal">
 						<div className="flex">
 							<div className="bg-baseColour p-3 rounded-full my-auto">
