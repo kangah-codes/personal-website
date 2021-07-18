@@ -22,7 +22,7 @@ export default function Home() {
 				<div className="max-w-md text-xl mt-4 text-white mx-auto text-center">
 					Below are a collection of some of my favourite albums.
 					Genres here range from pop, to rock, to indie, to R&B,
-					alternative and soul. Hope you find something you&amp;ll
+					alternative and soul. Hope you find something you&apos;ll
 					like in this pile. Swipe through to have a look!
 				</div>
 			</div>
