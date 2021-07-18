@@ -168,4 +168,5 @@ body {
 	@apply w-72 md:w-110 lg:w-120 xl:w-140;
 	@apply rounded-lg;
 	@apply filter backdrop-blur-lg opacity-70 !important;
+	@apply mx-auto;
 }
