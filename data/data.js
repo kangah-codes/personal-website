@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 
 export const thingsIdo = [
@@ -116,21 +117,13 @@ export const Technologies = () => (
 
 		<div className="flex space-x-2">
 			{tech.map((item, key) => (
-				<div key={key}>
-					<Image
-						src={`/tech/${item}`}
-						alt={item}
-						width={40}
-						height={40}
-						className="round"
-					/>
-				</div>
+				<img
+					key={key}
+					src={`/tech/${item}`}
+					alt={item}
+					className="rounded-md w-10"
+				/>
 			))}
-			<style jsx global>{`
-				.round {
-					border-radius: 4px;
-				}
-			`}</style>
 		</div>
 	</div>
 );
