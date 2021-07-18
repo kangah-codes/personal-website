@@ -45,7 +45,7 @@ const cards = [
 ];
 
 const prefix =
-	process.env.NODE_ENV !== "development"
+	process.env.NODE_ENV == "development"
 		? "/albums"
 		: "https://storage.googleapis.com/kangah-album-covers";
 
