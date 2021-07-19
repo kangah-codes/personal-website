@@ -36,7 +36,7 @@ export const myInterests = [
 		text: `
 			I love programming. Programming has taught me how to approach problems and solve them in many ways. It's the perfect mental exercise for me.
 		`,
-		icon: "/keyboard.png",
+		icon: "/bulb.png",
 		blobColour: "bg-baseColour",
 	},
 	{
