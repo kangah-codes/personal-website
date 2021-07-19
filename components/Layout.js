@@ -6,9 +6,14 @@ const Layout = ({
 	title = "kangah.codes",
 	desc = "Welcome to my website.",
 	pt = false,
+	hFull = true,
 }) => {
 	return (
-		<div className="flex flex-col min-h-screen bg-black">
+		<div
+			className={`flex flex-col ${
+				hFull ? "hscreen" : ""
+			} h-130 md:h-150 bg-black`}
+		>
 			<Head>
 				<script
 					type="text/javascript"
@@ -67,7 +72,7 @@ const Layout = ({
 				<NavBar />
 			</div> */}
 
-			<div className="flex-grow overflow-x-hidden">
+			<div className="flex-grow">
 				<div
 					className="fixed top-0 w-full"
 					style={{ zIndex: 99999999999 }}
