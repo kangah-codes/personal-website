@@ -55,7 +55,6 @@ export const getStaticProps = async () => {
 };
 
 export default function Home({ images }) {
-	console.log(images);
 	const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
 	const [props, set] = useSprings(cards.length, (i) => ({
 		...to(i),
