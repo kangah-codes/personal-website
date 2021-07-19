@@ -11,7 +11,7 @@ const MyTerminal = () => {
 	return (
 		<Terminal
 			fileSystem={exampleFileSystem}
-			inputPrompt="pygd0d@kangah.codes$"
+			inputPrompt="pyg0d@kangah.codes$"
 		/>
 	);
 };
