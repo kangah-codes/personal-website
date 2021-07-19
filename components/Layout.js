@@ -11,8 +11,8 @@ const Layout = ({
 	return (
 		<div
 			className={`flex flex-col ${
-				hFull ? "hscreen" : ""
-			} h-130 md:h-150 bg-black`}
+				hFull ? "hscreen" : "h-120 md:h-150"
+			} bg-black`}
 		>
 			<Head>
 				<script
