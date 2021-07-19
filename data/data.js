@@ -261,14 +261,14 @@ export const WorkExperience = () => (
 									? `/work_experience/${item.icon}`
 									: "/not-found.png"
 							}
-							className="w-10 h-10 my-auto rounded-md no-mt"
+							className="w-10 h-10 my-auto no-mt"
 							alt="elite"
 						/>
 						<a
 							href={item.website ? item.website : "#"}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="my-auto ml-2 big-text hover:underline"
+							className="my-auto big-text hover:underline"
 						>
 							{item.name}
 						</a>
@@ -298,9 +298,11 @@ export const WorkExperience = () => (
 				font-size: 1.25rem !important;
 				margin-top: auto !important;
 				margin-bottom: auto !important;
+				margin-left: 0.5rem !important;
 			}
 			.no-mt {
 				margin-top: 0 !important;
+				border-radius: 6px !important;
 			}
 			.l-disc {
 				list-style-type: disc !important;
