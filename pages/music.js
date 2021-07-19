@@ -1,14 +1,12 @@
 import Layout from "../components/Layout";
-import Deck from "../components/Swipe";
 import React, { useState } from "react";
 import { useSprings, animated, to as interpolate } from "react-spring";
 import { useDrag } from "react-use-gesture";
 import Image from "next/image";
 import { cards } from "../data/data";
-import { InferGetStaticPropsType } from "next";
 import { getPlaiceholder } from "plaiceholder";
 
-const isDev = process.env.NODE_ENV !== "development";
+const isDev = process.env.NODE_ENV === "development";
 
 const getImagesFromPlaiceholders = (...classNames) =>
 	Promise.all(
@@ -25,7 +23,7 @@ const getImagesFromPlaiceholders = (...classNames) =>
 	);
 
 const prefix =
-	process.env.NODE_ENV !== "development"
+	process.env.NODE_ENV === "development"
 		? "/albums"
 		: "https://storage.googleapis.com/kangah-album-covers";
 
