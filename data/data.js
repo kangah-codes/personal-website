@@ -78,8 +78,8 @@ export const Languages = () => (
 	<div>
 		<p>Languages I work with</p>
 
-		<div className="flex space-x-2">
-			<div>
+		<div className="flex">
+			<div className="left-2">
 				<Image
 					src="/tech/python.png"
 					alt="python"
@@ -87,7 +87,7 @@ export const Languages = () => (
 					height={40}
 				/>
 			</div>
-			<div>
+			<div className="left-2">
 				{" "}
 				<Image
 					src="/tech/typescript.png"
@@ -96,7 +96,7 @@ export const Languages = () => (
 					height={40}
 				/>
 			</div>
-			<div>
+			<div className="left-2">
 				<Image
 					src="/tech/javascript.svg"
 					alt="js"
@@ -104,6 +104,11 @@ export const Languages = () => (
 					height={40}
 				/>
 			</div>
+			<style jsx global>{`
+				.left-2 {
+					margin-left: 0.5rem !important;
+				}
+			`}</style>
 		</div>
 	</div>
 );
