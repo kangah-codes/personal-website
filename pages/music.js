@@ -22,11 +22,6 @@ const getImagesFromPlaiceholders = (...classNames) =>
 		})
 	);
 
-const prefix =
-	process.env.NODE_ENV === "development"
-		? "/albums"
-		: "https://storage.googleapis.com/kangah-album-covers";
-
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i) => ({
 	x: 0,
@@ -44,8 +39,6 @@ const trans = (r, s) =>
 
 export const getStaticProps = async () => {
 	const images = await getImagesFromPlaiceholders(...cards);
-
-	console.log(images);
 
 	return {
 		props: {
@@ -116,7 +109,6 @@ export default function Home({ images }) {
 			</div>
 			<div className="swipe_div h-115 overflow-x-hidden z-50 flex items-center justify-center">
 				{props.map(({ x, y, rot, scale }, i) => {
-					console.log({ className: "album-cover", ...images[i] });
 					return (
 						<animated.div key={i} style={{ x, y }}>
 							{/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
@@ -131,7 +123,7 @@ export default function Home({ images }) {
 									className={`${images[i].className} absolute rounded-lg inset-0 w-full h-full filter`}
 								/>
 								<Image
-									className="album-cover"
+									className="album-cover not-draggable"
 									{...images[i]}
 									alt="Album Cover"
 								/>
