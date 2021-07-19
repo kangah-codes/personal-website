@@ -2,6 +2,7 @@
 
 img {
 	color: transparent;
+	-webkit-user-drag: none;
 }
 
 @tailwind components;
@@ -183,4 +184,8 @@ body {
 	@apply rounded-lg;
 	@apply filter backdrop-blur-lg opacity-70 !important;
 	@apply mx-auto;
+}
+
+.not-draggable {
+	-webkit-user-drag: none;
 }
