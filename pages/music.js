@@ -127,7 +127,6 @@ export default function Home({ images }) {
 								{...bind(i)}
 								style={{
 									transform: interpolate([rot, scale], trans),
-									// backgroundImage: `url(https://storage.googleapis.com/kangah-album-covers/${cards[i]})`,
 								}}
 							>
 								<div
@@ -135,11 +134,6 @@ export default function Home({ images }) {
 									className={`${images[i].className} absolute rounded-lg inset-0 w-full h-full filter`}
 								/>
 								<Image
-									// src={`${prefix}/${cards[i]}`}
-									// width={500}
-									// height={500}
-									// style={{ borderRadius: "5px" }}
-									// alt={cards[i]}
 									className="album-cover"
 									{...images[i]}
 									alt="Album Cover"
