@@ -92,7 +92,7 @@ export default function Home({ images }) {
 	);
 
 	return (
-		<Layout>
+		<Layout hFull={false}>
 			<div className="w-full flex flex-col mx-auto max-w-7xl pb-10 pt-48 xl:pt-36 px-8">
 				<p
 					className="text-5xl text-center text-gradient animate-gradient-x bg-gradient-to-r from-baseColour
