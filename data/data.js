@@ -300,10 +300,10 @@ export const WorkExperience = () => (
 		</div>
 		<style jsx global>{`
 			.big-text {
-				font-size: 1.25rem !important;
 				margin-top: auto !important;
 				margin-bottom: auto !important;
 				margin-left: 0.5rem !important;
+				font-size: 1.25rem !important;
 			}
 			.no-mt {
 				margin-top: 0 !important;
@@ -404,4 +404,10 @@ export const cards = [
 	"thriller.jpg",
 	"toto-iv.jpg",
 	"van-halen.jpg",
+	"turbo.jpg",
+	"mbdtf.png",
+	"graduation.png",
+	"tlop.png",
+	"yeezus.png",
+	"donda.png",
 ];
