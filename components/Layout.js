@@ -9,11 +9,7 @@ const Layout = ({
 	hFull = true,
 }) => {
 	return (
-		<div
-			className={`flex flex-col ${
-				hFull ? "hscreen" : "h-120 md:h-150"
-			} bg-black`}
-		>
+		<div className={`flex flex-col ${hFull ? "" : "h-150"} bg-black`}>
 			<Head>
 				<script
 					type="text/javascript"
