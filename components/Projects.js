@@ -16,11 +16,11 @@ const data = [
 		link: "https://campusridegh.herokuapp.com/",
 	},
 	{
-		title: "Brick Breaker",
-		text: "An infinite level brick breaker game. If boredom won't kill you first a bug in the game definitely will.",
-		icon: "/brick-game.png",
+		title: "Bolt Food React Native",
+		text: "Cloning the Bolt Food app in React Native. [For educational purposes only :)].",
+		icon: "/restaurant.PNG",
 		blobColour: "bg-purple-700",
-		link: "https://github.com/kangah-codes/brick_breaker",
+		link: "https://github.com/kangah-codes/bolt-react-native",
 	},
 	{
 		title: "Metas Strip",
